@@ -1,0 +1,12 @@
+# Core
+python-binance==1.0.19
+typer[all]==0.12.3
+click==8.1.8            # typer 0.12.x requires click <8.2
+rich==13.7.1
+pydantic==2.7.1
+pydantic-settings==2.3.1
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.2.2
+pytest-mock==3.14.0
