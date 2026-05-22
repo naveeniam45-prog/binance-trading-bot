@@ -4,7 +4,6 @@
 from typing import Optional
 
 import typer
-from pydantic import ValidationError
 from rich.prompt import Confirm, Prompt
 
 from bot.client import BinanceFuturesClient
@@ -56,7 +55,7 @@ def _build_request(
             quantity=str(quantity),
             price=str(price) if price is not None else None,
         )
-    except ValidationError as exc:
+    except Exception as e:
         for error in exc.errors():
             display_error(error["msg"])
         return None
