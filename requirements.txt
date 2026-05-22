@@ -2,5 +2,4 @@ python-binance
 python-dotenv
 requests
 rich
-pydantic==2.7.4
 pytest
